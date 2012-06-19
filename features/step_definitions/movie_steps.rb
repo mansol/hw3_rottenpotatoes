@@ -7,7 +7,7 @@ Given /the following movies exist/ do |movies_table|
     
    Movie.create!(movie) 
   end
-  flunk "Unimplemented"
+ # flunk "Unimplemented"
 end
 
 # Make sure that one string (regexp) occurs before or after another one
