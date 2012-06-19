@@ -14,8 +14,21 @@ Given /the following movies exist/ do |movies_table|
     # you should arrange to add that movie to the database here.  
     
     
-   alladin = Movie.create(:title => 'Alladin', :rating => 'G', :release_date => '25-Nov-1992') 
-   
+#    | title                   | rating | release_date |
+#  | Aladdin                 | G      | 25-Nov-1992  |
+#  | When Harry Met Sally    | R      | 21-Jul-1989  |
+#  | Chocolat                | PG-13  | 5-Jan-2001   |
+#  | 2001: A Space Odyssey   | G      | 6-Apr-1968   |
+#  | The Incredibles         | PG     | 5-Nov-2004   |
+#  | Raiders of the Lost Ark | PG     | 12-Jun-1981  |
+#  | Chicken Run             | G      | 21-Jun-2000  |
+         
+   Movie.create(:title => 'Alladin', :rating => 'G', :release_date => '25-Nov-1992')
+   Movie.create(:title => 'When Harry Met Sally', :rating => 'R', :release_date => '21-Jul-1989')
+   Movie.create(:title => 'Chocolat', :rating => 'PG-13', :release_date => '5-Jan-2001')
+   Movie.create(:title => '2001: A Space Odyssey', :rating => 'G', :release_date => '6-Apr-1968') 
+    
+    
    Movie.create!(movie) 
   end
  # flunk "Unimplemented"
