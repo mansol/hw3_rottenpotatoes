@@ -25,7 +25,6 @@ Scenario: sort movies alphabetically
   When I follow "Movie Title"
   # your steps here
 
-Scenario: sort movies alphabetically
     [First check all checkboxes]
     [Then press needed button]
     [Then follow the link that sorts data alphabetically]
