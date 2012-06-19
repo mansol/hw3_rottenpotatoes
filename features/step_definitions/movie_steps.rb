@@ -4,10 +4,15 @@
 #  movies_table.hashes.each do |movie|
     # each returned element will be a hash whose key is the table header.
     # you should arrange to add that movie to the database here.
-Given /^(?:|I )check the following ratings:(.*) $/ do |values| 
-  values.split(",").each do |rating| And %Q{I check "ratings" + "#{rating}} 
-#end end
-     
+#                                                                                                                                                                                                                                                                                                                     
+Given /the following movies exist/ do |movies_table|
+  movies_table.hashes.each do |movie|
+    movie.title
+    movie.rating
+    movie.release_date
+    # each returned element will be a hash whose key is the table header.
+    # you should arrange to add that movie to the database here.  
+   
    Movie.create!(movie) 
   end
  # flunk "Unimplemented"
